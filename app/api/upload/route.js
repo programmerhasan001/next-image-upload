@@ -17,6 +17,6 @@ export const POST = async (request) => {
 
 
 export const GET = async (request) => {
-    const files = await readdir("./public/images");
+    const files = await readdir("/public/images");
     return NextResponse.json({ msg: "image get successfully", files })
 }
